@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine|Poppins|Lobster|Inconsolata"');
+
+
+.container {
+    background-color: whitesmoke;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Poppins, monospace;
+}
+
+body {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+#title {
+    font-family: Poppins, monospace;
+    font-style: italic;
+    font-size: 1.6rem;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    /* background-color: #5f5f61; */
+    width: 95%;
+    margin: auto;
+    opacity: 0.9;
+    text-align: center;
+}
+
+#description {
+    font-family: Lobster, monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0.7;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+header {
+    color: #000;
+}
+
+#survey-form {
+    color: #ededf5;
+    background-color: #14141a;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 6.5%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input,
+.form-input-dropdown,
+.form-input-radio,
+.form-input-checkbox {
+    margin-bottom: 20px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.input {
+    font-size: 1.2rem;
+    font-family: Inconsolata;
+    opacity: 0.9;
+    width: 92.2%;
+    height: 30px;
+}
+
+#dropdown {
+    width: 93%;
+    height: 30px;
+}
+
+.textarea {
+    width: 92.2%;
+    max-width: 92.2%;
+    min-width: 92.2%;
+    height: 50px;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.text {
+    margin-bottom: 5px;
+
+}
+
+
+.input-radio,
+.checkbox {
+    margin-right: 5px;
+    min-height: 1rem;
+    min-width: 1rem;
+}
+
+.button {
+    background-color: #40786c;
+    border-radius: 10px;
+    font-family: Lobster;
+    font-size: 1.25rem;
+    margin-left: 6%;
+    width: 80%;
+    height: 40px;
+}
+
+.button:hover {
+    color: #ffffff;
+    background-color: #061f19;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Media queries */
+@media (max-width: 700px) {
+    .container {
+       width: 95%;
+    }
+}

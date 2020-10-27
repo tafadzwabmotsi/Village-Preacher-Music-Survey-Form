@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VP Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title"> Village Preacher Music Survey Form</h1>
+            <p id="description">Thank you for your continued support and suggestion</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-input">
+                <label id="name-label" for="name">Name</label>
+                <input class="input" type="text" name= "" id="name" placeholder="Enter your name" class="input" required>
+            </div>
+            <div class="form-input">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="" id="email" placeholder="Enter your email" class="input" required>
+            </div>
+            <div class="form-input">
+                <label id="number-label" for="number"
+                >Age<span class="clue">(optional)</span></label>
+                <input type="number" name="number" id="number" min="12" max="110" class="input" placeholder="Enter your age">
+            </div>
+
+            <div class="form-input-dropdown">
+                <p>Which option best describes your role?</p>
+                <select name="role" id="dropdown" required>
+                    <option disabled selected value>Select your role</option>
+                    <option value="sponsor">Sponsor</option>
+                    <option value="donor">Donor</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="employee">Employee</option>
+                    <option value="fan">Fan</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-input-radio">
+                <p>Would you consider keeping in company with us?</p>
+                <label>
+                    <input name="support" value="definitely" type="radio" class="input-radio" checked/>Definitely
+                </label>
+
+                <label>
+                    <input name="support" value="maybe" type="radio" class="input-radio"/>Sure
+                </label>
+
+                <label>
+                    <input name="support" value="maybe" type="radio" class="input-radio"/>Maybe later
+                </label>
+            </div>
+
+            <div class="form-input-checkbox">
+                <p class="text">
+                    Which areas do you suggest they need immediate attention
+                    <span>(Check one or more)</span>  
+                </p>
+                <label for="mixing-mastering"><input type="checkbox" name="suggestion" value="mixing-mastering" class="checkbox">Mixing and Mastering</label>
+                <label for="vocal-processing"><input type="checkbox" name="suggestion" value="vocal-processing" class="checkbox">Vocal Processing</label>
+                <label for="beat-making-arrangement"><input type="checkbox" name="suggestion" value="beat-making-arrangement" class="checkbox">Beat Making and Arrangement</label>
+                <label for="song-writing"><input type="checkbox" name="suggestion" value="song-writing" class="checkbox">Song Writing</label>
+            </div>
+
+            <div class="form-input">
+                <p class="text">Your comments are highly regarded</p>
+                <textarea id="comments" class="textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-input">
+                <button type="submit" id="submit" class="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
